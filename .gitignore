@@ -1,5 +1,5 @@
 # Project exclude paths
-/.gradle/
-/.ide/
-/application-oauth.yml/
+.gradle
+.ide
+application-oauth.yml
 
