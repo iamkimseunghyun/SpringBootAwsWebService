@@ -3,8 +3,10 @@ package io.laaf.aws.config.auth.dto;
 import io.laaf.aws.domain.user.User;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 @Getter
-public class SessionUser {
+public class SessionUser implements Serializable {
 
     private String name;
     private String email;
