@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.laaf.aws.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-27T15:09:02" hostname="kakas-MBP.kornet" time="0.064">
+  <properties/>
+  <testcase name="롬복_기능_테스트()" classname="io.laaf.aws.web.dto.HelloResponseDtoTest" time="0.064"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
