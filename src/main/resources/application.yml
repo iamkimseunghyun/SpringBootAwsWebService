@@ -7,15 +7,20 @@ spring:
   profiles:
     include: oauth
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+    hikari:
+      jdbc-url: jdbc:mariadb:aws-webservice.cbsyvnyxkmyc.ap-northeast-2.rds.amazonaws.com:3306/aws_webservice_db
+      username: mariadb
+      password: mariadbmariadb
+      driver-class-name: org.mariadb.jdbc.Driver
   h2:
     console:
       enabled: true
   jpa:
-    show-sql: false
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
