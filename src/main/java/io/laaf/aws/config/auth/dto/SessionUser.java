@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.io.Serializable;
 
 @Getter
-public class SessionUser implements Serializable {
+public class SessionUser implements Serializable { // 임플먼츠 안해줘서 오류났음
 
     private String name;
     private String email;

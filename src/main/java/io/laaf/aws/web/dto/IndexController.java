@@ -25,7 +25,7 @@ public class IndexController {
         model.addAttribute("posts", postsService.findAllDesc());
         if (user != null) {
             log.info("로그인 유저 = {}", user.getName());
-            // "username"으로 키 값 설정 시 환경변수와 충돌나서 작동 안함
+            // "username"으로 키 값 설정하면 디폴트 환경변수와 충돌나서 작동 안함
             model.addAttribute("user", user.getName());
         }
         return "index";
